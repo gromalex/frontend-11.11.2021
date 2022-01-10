@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h2:after {
+      content: attr(data-content)
+    }
+
+    .list-item_primary {
+      font-weight: bold;
+      font-size: 24px;
+      color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+  <h1>Title <span>></span></h1>
+  <h2 data-content="Title level 2"></h2>
+  <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nemo modi id corrupti ullam iusto necessitatibus. Aut, alias eos. Placeat aperiam obcaecati excepturi expedita odit?</p>
+  <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nemo modi id corrupti ullam iusto necessitatibus. Aut, alias eos. Placeat aperiam obcaecati excepturi expedita odit?</p>
+
+  <button id="buttonOpenMenu" data-role="openMenu">previousElementSibling</button>
+
+  <ul class="list">
+    <li class="list-item">Lorem ipsum dolor sit amet.</li>
+    <li class="list-item">Alias non magni nemo hic.</li>
+    <li class="list-item">Vero repudiandae neque soluta consequatur.</li>
+    <li class="list-item">Necessitatibus enim asperiores sit aspernatur?</li>
+    <li class="list-item">Distinctio nobis vel commodi error.</li>
+  </ul>
+
+  <button>nextElementSibling</button>
+
+  <form action="" id="form">
+    <input type="text" name="" id="userName">
+    <button class="btn" id="button" type="submit">Submit</button>
+  </form>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
