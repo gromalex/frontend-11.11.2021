@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .collapse {
+      display: none;
+    }
+
+    .collapse.shown {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lesson 6</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nam aperiam dolorem quas debitis facere eveniet cum quis iste quisquam, repellat dolores molestias facilis sequi.</p>
+
+  <div id="listWrapper"></div>
+
+  <button id="button1" onclick="console.log('Hello')">Show hello 1</button>
+  <button id="button2">Show hello 2</button>
+  <button id="button3" data-action="click" data-time="13.01.2022"><span>Show hello 3</span></button>
+
+  <a href="https://getbootstrap.com/docs/5.0/components/toasts/" target="_blank">Bootstrap Toast</a>
+
+  <br>
+  <br>
+
+  <button id="collapseButton">Show content</button>
+  <div class="collapse">
+    <h2>Lorem ipsum dolor sit amet. <button>X</button></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, corrupti.</p>
+    <p>Doloribus explicabo animi ad necessitatibus illum nisi ab veritatis est?</p>
+    <p>Nam unde corporis delectus consequuntur suscipit! Aspernatur voluptatem facere enim.</p>
+    <p>Fuga, iure illum totam vitae ex ullam repellat soluta esse.</p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
