@@ -1,0 +1,22 @@
+body {
+  padding: 1rem;
+  background-color: rgba(238, 238, 238, 0.911);
+}
+
+.island {
+  border-radius: 0.5rem;
+
+  background-color: white;
+}
+
+.island__item {
+  padding: 1rem;
+}
+
+.island__item + .island__item {
+  border-top: 1px solid rgb(238, 238, 238);
+}
+
+.island + .island {
+  margin-top: 1rem;
+}
