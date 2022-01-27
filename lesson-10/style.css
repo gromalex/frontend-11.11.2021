@@ -1,0 +1,48 @@
+body {
+  padding: 1rem;
+  background-color: rgba(238, 238, 238, 0.911);
+}
+
+.island {
+  border-radius: 0.5rem;
+
+  background-color: white;
+}
+
+.island__item {
+  padding: 1rem;
+  order: 1;
+}
+
+.island__item + .island__item {
+  border-top: 1px solid rgb(238, 238, 238);
+}
+
+.island__item_checked {
+  order: 2;
+}
+
+.island__item_edit .form-edit {
+  display: flex;
+}
+
+.island__item_edit label {
+  display: none;
+}
+
+.island__item_edit .btn-warning {
+  display: none;
+}
+
+.island__item_checked label {
+  text-decoration: line-through;
+}
+
+.island + .island {
+  margin-top: 1rem;
+}
+
+.form-edit {
+  display: none;
+  align-items: center;
+}
