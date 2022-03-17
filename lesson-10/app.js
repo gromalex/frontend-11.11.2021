@@ -1,6 +1,13 @@
 const storage = localStorage.getItem('data')
 const parsedStorage = storage ? JSON.parse(storage) : []
 const data = parsedStorage
+console.log(data)
+
+// if (storage) {
+//   parsedStorage = JSON.parse(storage)
+// } else {
+//   parsedStorage = []
+// }
 
 const formCreateElement = document.querySelector('#formCreate')
 const listElement = document.querySelector('#list')
@@ -14,6 +21,9 @@ listElement.addEventListener('click', handleEditTodo)
 listElement.addEventListener('submit', handleSubmitFormEdit)
 window.addEventListener('beforeunload', () => {
   const string = JSON.stringify(data)
+
+  console.log(string)
+
   localStorage.setItem('data', string)
 })
 document.addEventListener('DOMContentLoaded', () => {
@@ -42,6 +52,8 @@ function handleSubmitFormCreate (event) {
     todo[name] = value
   }
 
+  console.log(todo)
+  console.log(todo.createdAt.getFullYear())
   data.push(todo)
   formCreateElement.reset()
 

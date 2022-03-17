@@ -2,6 +2,7 @@ import { DnD } from './dnd'
 
 class Card {
   data = []
+  activeStick = null
 
   constructor () {
     this.buttonElement = document.querySelector('#button')
@@ -32,6 +33,8 @@ class Card {
     const cardWrapperElement = document.createElement('div')
     cardWrapperElement.classList.add('card')
     cardWrapperElement.setAttribute('data-id', data.id)
+    cardWrapperElement.style.top = data.position.top
+    cardWrapperElement.style.left = data.position.left
 
     const templateInnerCard = `
       <div class="card__content">${data.content}</div>
