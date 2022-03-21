@@ -1,0 +1,21 @@
+.error-message {
+  color: red;
+  display: none;
+}
+
+.enable-validation {
+  input:invalid + .error-message {
+    display: block;
+  }
+
+  input:invalid {
+    border: 1px solid red;
+  }
+}
+
+.enable-validation:invalid {
+  button[type="submit"] {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}

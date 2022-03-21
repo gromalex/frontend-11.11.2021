@@ -1,6 +1,50 @@
 @import './title';
 
+.card {
+  position: absolute;
 
-// body {
-//   background: url('../../assets/images/cat@720x405.jpeg');
-// }
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+
+  width: 180px;
+  height: 240px;
+  box-shadow: 0px 6px 15px 8px rgba(34, 60, 80, 0.2);
+
+  &_edit {
+    .card__form {
+      display: block;
+    }
+
+    .card__content {
+      display: none;
+    }
+  }
+
+  &__remove {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    width: 1rem;
+    line-height: 0;
+
+    border-radius: 50%;
+
+    background-color: rgb(218, 103, 103);
+    color: white;
+
+    text-decoration: none;
+  }
+
+  &__content {
+
+  }
+
+  &__form {
+    display: none;
+  }
+}
